@@ -1,0 +1,90 @@
+/* Le code CSS spécifique à la page de documentation */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --vert: #016663;
+    --noir: #364141;
+    --blanc: #EAFEFF;
+    --blanc: #FAFAFA;
+    --orange: #EA9666;
+    --turquoise:#EAFEFF;
+    --big: 24px;
+
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 30px;
+    /* align-items: center; */
+    margin: 0;
+    gap: 90px;
+    height:500px;
+    background-image: url("assets/doc/background/nav_background.png");
+    background-repeat: no-repeat;
+    background-size:2000px;
+    /* background-color: var(--noir); */
+
+    a {
+        text-decoration: none;
+        color: var(--blanc);
+        font-size: var(--big);
+    }
+
+    svg {
+        height: 30px;
+    }
+}
+
+/*Main container*/
+.mainContainer {
+    margin: auto;
+    width: 1200px;
+}
+
+/*contexte*/
+.sectionContexte
+{
+    background-color: var(--turquoise);
+    text-align: center;
+    h2{
+        color:var(--vert);
+        padding-top: 100px;
+    }
+    .texteContexte
+    {
+        width:800px;
+        padding-top:50px;
+
+        
+    }
+    
+}
+
+/*pour qui*/
+.pourquifaite{
+    h2{
+        color:var(--vert);
+    }
+    text-align:center;
+    .textepourqui
+    {
+        width:800px;
+    }
+}
+
+/* service */
+.service{
+    background-color: var(--turquoise);
+}
+h2{
+    text-align: center;
+    color:var(--vert);
+}
