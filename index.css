@@ -1,1 +1,104 @@
 /* Le code CSS spécifique à la page d'accueil */
+/* reinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global */
+h1 {}
+
+.padding-section {
+    padding: 120px 24px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1080px;
+}
+
+/*Tony*/
+section.CTA {
+    height: 600px;
+    background-color: #EFF1F1;
+    color: #016663;
+    padding-top: 10px;
+    text-align: center;
+    p{
+        color:#364141;
+    }
+    img.getOnApp {
+        width: 10%;
+    }
+
+    img.telephonesCTA {
+        width: 30%;
+    }
+
+    .titreEtGetOnApp {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.sponsor {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+    img {
+        width: 5%;
+    }
+}
+
+/* Problématique */
+#problematique {
+     background-color: #E2F3F2;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    span {
+        font-size: 60px;
+        color: #016663;
+
+    }
+
+    .card {
+        
+    }
+}
+.container h2{
+    color: #016663;
+    font-size: 55px;
+}
+.card {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+       
+        margin-bottom: 24px;
+        p{
+            font-size: 20px;
+        }
+}
+.test{
+    transform: translate();
+}
+
+/* solution */
+
+.carteEtape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: ;
+
+    img{
+        width: 33%;
+    }
+}
