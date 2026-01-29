@@ -481,6 +481,7 @@ nav {
 
 /* Persona */
 #persona {
+    width: 700px;
 
     img {
         border-radius: 70px;
@@ -532,6 +533,14 @@ h2 {
 /*ecologie*/
 .ecologie {
     margin: auto;
+    width: 700px;
+}
+
+#ecologie{
+    img{
+        width: 100%;
+        
+    }
 }
 
 /* maquette */
