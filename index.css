@@ -12,8 +12,8 @@
 
 :root {
     --vert: #016663;
-    --noir: #364141;
-    --blanc: #EAFEFF;
+    --noir: #141414;
+    --blanc: #fbffff;
     --orange: #EA9666;
     --big: 24px;
     --Typo: "Space Grotesk";
@@ -169,14 +169,16 @@ section.CTA {
     p {
         padding: 25px 0px 25px 0px;
     }
-    
+
 }
-.specp{
-        text-align: center;
-        font-weight: 500;
-        font-size: var(--H3);
-        padding: 25px 0px 25px 0px;
-    }
+
+.specp {
+    text-align: center;
+    font-weight: 500;
+    font-size: var(--H3);
+    padding: 25px 0px 25px 0px;
+}
+
 .carteEtape {
     display: flex;
     flex-direction: row;
@@ -186,18 +188,21 @@ section.CTA {
     gap: 24px;
     border-radius: 5px;
     margin: auto;
+    
 
     img {
         border-radius: 10px;
         width: 80%;
         height: 200px;
-        box-shadow: 3px;
+        /* box-shadow: 3px; */
+        object-fit: cover;
 
     }
 
     .cardMini {
         width: 400px;
-        box-shadow: 5px, 5px, 5px, black;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.071);
+        /* box-shadow: 5px, 5px, 5px, black; */
     }
 
 }
@@ -451,16 +456,6 @@ nav {
     width: 1200px;
 }
 
-/*contexte*/
-/* .sectionContexte {
-    background-color: var(--turquoise);
-    text-align: center;
-
-    h2 {
-        color: var(--vert);
-        padding-top: 100px;
-    } */
-
 .texteContexte {
     width: 800px;
     padding-top: 50px;
@@ -491,7 +486,7 @@ nav {
 
 }
 
-/* service */
+/* services */
 .service {
     background-color: var(--turquoise);
 
@@ -503,6 +498,7 @@ nav {
         display: flex;
         justify-content: center;
         justify-content: space-around;
+        padding: 75px;
     }
 }
 
@@ -536,17 +532,17 @@ h2 {
     width: 700px;
 }
 
-#ecologie{
-    img{
+#ecologie {
+    img {
         width: 100%;
-        
+
     }
 }
 
 /* maquette */
-.maquette{
-    img{
-        width:700px;
+.maquette {
+    img {
+        width: 700px;
         text-align: center;
     }
 }
