@@ -27,12 +27,13 @@
     --TexteMedium: 20px;
     --Paragraphe: 16px;
     --NumSpecial: 60px;
-
+    
 }
 
+/* code global */
 body {
     font-family: "Space Grotesk", sans-serif;
-
+    
     .button {
         background-color: #EA9666;
         color: white;
@@ -41,16 +42,61 @@ body {
         padding: 15px;
         border-radius: 5px;
         text-decoration: none;
+        border: none;
     }
+    
+}
 
+
+
+body::-webkit-scrollbar {
+    
+	width: 12px;
+	background-color: #F5F5F5;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--vert);
+}
+
+h1 {}
+
+h2 {
+    line-height: 1.1;
+    color: #016663;
+    font-size: var(--NumSpecial);
+    margin-bottom: 14px;
+
+}
+h3 {
+    font-size: 28px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* container */
+section {
+    padding: 120px 24px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1080px;
 }
 
 /* padding h2 */
-.paddingH {
-    padding: 25px 0px 25px 0px;
-    text-align: center;
-    color: #364141;
-}
+
 
 .titreDoc {
     padding: 25px 0px 25px 0px;
@@ -61,19 +107,14 @@ body {
 
 /* Style global */
 
-.padding-section {
-    padding: 120px 24px;
-}
-
-.container {
-    margin: auto;
-    max-width: 1080px;
-}
 
 /*Tony*/
 #courbeVerte {
     /* padding-bottom:20px; */
-    margin-bottom: 20px;
+    min-height: 60vh;
+    height: auto;
+    width: 100vw;
+    bottom: 0;
 }
 
 /* #btnTelechargerApp {
@@ -85,16 +126,9 @@ body {
     box-shadow: 5px;
 }
 
-section.CTA {
-    height: 600px;
-    background-color: #EFF1F1;
-    color: #016663;
-    padding-top: 10px;
-    text-align: center;
+.CTA {
+    background-color: #cbdbdb;
 
-    p {
-        color: #364141;
-    }
 
     img.getOnApp {
         width: 10%;
@@ -105,19 +139,20 @@ section.CTA {
     }
 
     .titreEtGetOnApp {
-        justify-content: center;
         align-items: center;
+        margin-top: 64px;
     }
 }
 
 .sponsor {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
-    padding: 30px 0px 30px 0px;
+    gap: 64px;
+    padding: 88px;
 
     img {
-        width: 5%;
+        height: 80px;
+
     }
 }
 
@@ -127,30 +162,29 @@ section.CTA {
 
     .container {
         display: flex;
-        align-items: flex-start;
-        justify-content: center;
-        gap: 32px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 120px;
 
+    }
+
+    #stats {
+        font-size: 12px;
+        font-style: italic;
+        margin-top: 100px;
     }
 
     .premierBlocProblematique {
         /* background-color:blue; */
         display: flex;
         flex-direction: column;
-        gap: 60px;
 
         p {
             font-size: 23px;
             /* margin-top:30px; */
-            margin-left: 30px;
             /* width:530px; */
         }
 
-        #stats {
-            font-size: 12px;
-            margin-top: 200px;
-            font-style: italic;
-        }
     }
 
 
@@ -164,10 +198,7 @@ section.CTA {
 
 }
 
-.container h2 {
-    color: #016663;
-    font-size: var(--NumSpecial);
-}
+
 
 .card {
     background: white;
@@ -189,51 +220,30 @@ section.CTA {
     transform: rotateZ(352deg);
 }
 
+.card:hover{
+     background: #008f8b;
+     color: #F5F5F5;
+     transition: all 0.2s ease;
+}
+
 /* solution */
-#solution {
-    height: 75vh;
-    padding: 50px;
-
-    h2 {
-        font-size: var(--H2);
-        font-weight: var(--H2WEIGHT);
-        text-align: center;
-        color: var(--vert);
-        padding: 15px 0px 15px 0px;
-    }
-
-    p {
-        padding: 25px 0px 25px 0px;
-    }
-
-}
-
-.specp {
-    text-align: center;
-    font-weight: 500;
-    font-size: var(--H3);
-    padding: 25px 0px 25px 0px;
-}
 
 .carteEtape {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* align-items:center; */
+    justify-content: center;
+    text-wrap: wrap;
     text-align: center;
-    gap: 24px;
-    border-radius: 5px;
-    margin: auto;
+    gap: 32px;
+    margin-top: 64px;
 
 
     img {
-        border-radius: 10px;
         width: 100%;
         height: 200px;
-        /* box-shadow: 3px; */
-        /* object-fit: cover; */
+        object-fit: cover;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position-y: top;
 
     }
 
@@ -241,10 +251,26 @@ section.CTA {
         width: 400px;
         box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.071);
         /* box-shadow: 5px, 5px, 5px, black; */
-        border-radius: 10px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        div {
+            padding: 12px 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+        
     }
 }
-
+.cardMini:hover{
+            
+        border-style: solid;
+        border-color: #016663;
+        transition: all 0.2s ease;
+        }
 /* partie header , ne touchez pas */
 
 
@@ -273,20 +299,28 @@ header>img {
 header>svg {
     height: fit-content;
     position: absolute;
-    bottom: -131px;
+    bottom: 0;
+    height: 50vh;
 }
 
 #accueil {
+    height: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+
     .container {
-        transform: matrix(1, 0, 0, 1, 0, 0);
+        z-index: 1;
         height: 60vh;
-        justify-content: space-between;
+        justify-content: center;
         display: flex;
         flex-direction: column;
+        width: 100%;
+        gap: 25vh;
     }
 
     .infos {
-        margin-top: 26vh;
         color: white;
         font-size: 19px;
         /* h3{
@@ -304,6 +338,12 @@ header>svg {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+}
+.button:hover {
+    
+        border-style: groove;
+        box-shadow: 4px 4px 0px 1px white;
+        transition: all 0.2s ease;
 }
 
 
@@ -338,10 +378,36 @@ nav {
         color: var(--blanc);
         font-size: var(--TexteUnPeuGrand);
     }
+    a:hover{
+        color: #EA9666;
+        transition: all 0.2s ease;
+    }
 
     svg {
         height: 30px;
     }
+}
+.one:hover{
+background-color: #008f8b;
+
+transition: all 0.2s ease;
+}
+.two:hover{
+background-color: #008f8b;
+
+transition: all 0.2s ease;
+
+}
+.three:hover{
+background-color: #008f8b;
+
+transition: all 0.2s ease;
+
+}
+.four:hover{
+background-color: #008f8b;
+transition: all 0.2s ease;
+
 }
 
 
@@ -357,31 +423,35 @@ nav {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
+    padding-top: 64px;
+    text-align: left;
 
     img {
 
         width: 310px;
         float: right;
     }
+
+    .content {
+        color: white;
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        max-width: 80%;
+        transform: translateY(-50%);
+    }
+    p {
+    font-size: 20px;
+    opacity: .8;
+}
 }
 
-#benefices .wrapper p {
-    color: white;
-    position: absolute;
-    left: 010%;
-    top: 50%;
-    max-width: 80%;
-    font-size: 30px;
-    transform: translateY(-50%);
-}
 
 .wrapper>div {
     border: 2px solid #E2F3F2;
     border-radius: 10px;
     background-color: #016663;
     padding: 1em;
-    color: black;
-    font-size: 30px;
 }
 
 .one {
@@ -402,20 +472,6 @@ nav {
 
 /* section temoignages */
 #Temoignage {
-    background-color: white;
-    text-align: center;
-
-    h2 {
-        justify-self: center;
-        gap: 9px;
-        padding-top: 212px;
-        padding-bottom: 46px;
-        /* text-align: center; */
-    }
-
-    p {
-        text-align: left;
-    }
 
     #etoileFilanteTemoin {
 
@@ -428,9 +484,10 @@ nav {
 
 .temoin {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
 }
 
 .cardtemoin {
@@ -512,7 +569,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
 }
+
 
 .nav {
     display: flex;
@@ -581,7 +641,6 @@ nav {
 /*Section pour qui*/
 .backgroundMintGreen {
     background-color: #E2F3F2;
-    color: #016663;
 }
 
 /* Persona */
@@ -609,13 +668,16 @@ nav {
         justify-content: space-around;
         padding: 75px;
         text-align: center;
+        gap:20px;
+
+        .fondBlanc{
+            background-color: var(--blanc);
+        }
     }
+
 }
 
-h2 {
-    text-align: center;
-    color: var(--vert);
-}
+
 
 .contenu-footer {
 
