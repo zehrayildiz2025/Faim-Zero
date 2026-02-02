@@ -27,13 +27,13 @@
     --TexteMedium: 20px;
     --Paragraphe: 16px;
     --NumSpecial: 60px;
-    
+
 }
 
 /* code global */
 body {
     font-family: "Space Grotesk", sans-serif;
-    
+
     .button {
         background-color: #EA9666;
         color: white;
@@ -44,28 +44,28 @@ body {
         text-decoration: none;
         border: none;
     }
-    
+
 }
 
 
 
 body::-webkit-scrollbar {
-    
-	width: 12px;
-	background-color: #F5F5F5;
+
+    width: 12px;
+    background-color: #F5F5F5;
 }
- 
+
 body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
 }
- 
+
 body::-webkit-scrollbar-thumb {
-    
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: var(--vert);
+
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: var(--vert);
 }
 
 h1 {}
@@ -77,6 +77,7 @@ h2 {
     margin-bottom: 14px;
 
 }
+
 h3 {
     font-size: 28px;
 }
@@ -220,10 +221,10 @@ section {
     transform: rotateZ(352deg);
 }
 
-.card:hover{
-     background: #008f8b;
-     color: #F5F5F5;
-     transition: all 0.2s ease;
+.card:hover {
+    background: #008f8b;
+    color: #F5F5F5;
+    transition: all 0.2s ease;
 }
 
 /* solution */
@@ -231,6 +232,7 @@ section {
 .carteEtape {
     display: flex;
     justify-content: center;
+    /* flex-wrap:wrap; */
     text-wrap: wrap;
     text-align: center;
     gap: 32px;
@@ -262,15 +264,17 @@ section {
             align-items: center;
             gap: 12px;
         }
-        
+
     }
 }
-.cardMini:hover{
-            
-        border-style: solid;
-        border-color: #016663;
-        transition: all 0.2s ease;
-        }
+
+.cardMini:hover {
+
+    border-style: solid;
+    border-color: #016663;
+    transition: all 0.2s ease;
+}
+
 /* partie header , ne touchez pas */
 
 
@@ -339,11 +343,12 @@ header>svg {
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
 .button:hover {
-    
-        border-style: groove;
-        box-shadow: 4px 4px 0px 1px white;
-        transition: all 0.2s ease;
+
+    border-style: groove;
+    box-shadow: 4px 4px 0px 1px white;
+    transition: all 0.2s ease;
 }
 
 
@@ -378,7 +383,8 @@ nav {
         color: var(--blanc);
         font-size: var(--TexteUnPeuGrand);
     }
-    a:hover{
+
+    a:hover {
         color: #EA9666;
         transition: all 0.2s ease;
     }
@@ -387,26 +393,30 @@ nav {
         height: 30px;
     }
 }
-.one:hover{
-background-color: #008f8b;
 
-transition: all 0.2s ease;
+.one:hover {
+    background-color: #008f8b;
+
+    transition: all 0.2s ease;
 }
-.two:hover{
-background-color: #008f8b;
 
-transition: all 0.2s ease;
+.two:hover {
+    background-color: #008f8b;
 
-}
-.three:hover{
-background-color: #008f8b;
-
-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 
 }
-.four:hover{
-background-color: #008f8b;
-transition: all 0.2s ease;
+
+.three:hover {
+    background-color: #008f8b;
+
+    transition: all 0.2s ease;
+
+}
+
+.four:hover {
+    background-color: #008f8b;
+    transition: all 0.2s ease;
 
 }
 
@@ -440,10 +450,11 @@ transition: all 0.2s ease;
         max-width: 80%;
         transform: translateY(-50%);
     }
+
     p {
-    font-size: 20px;
-    opacity: .8;
-}
+        font-size: 20px;
+        opacity: .8;
+    }
 }
 
 
@@ -658,9 +669,9 @@ transition: all 0.2s ease;
 .service {
     background-color: var(--turquoise);
 
-    img {
-        width: 100px;
-    }
+    /* img {
+        width: 200px;
+    } */
 
     .serviceContainer {
         display: flex;
@@ -668,15 +679,20 @@ transition: all 0.2s ease;
         justify-content: space-around;
         padding: 75px;
         text-align: center;
-        gap:20px;
+        gap: 20px;
 
-        .fondBlanc{
+        .fondBlanc {
             background-color: var(--blanc);
         }
     }
 
 }
-
+.serviceCard{
+        width: 300px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.071);
+        border-radius: 12px;
+        overflow: hidden;
+    }
 
 
 .contenu-footer {
@@ -715,6 +731,14 @@ transition: all 0.2s ease;
 }
 
 /* maquette */
+.fonction {
+    display: flex;
+    flex-direction: row;
+}
+.maquetteImg{
+    width: 75px;
+}
+/* userflow */
 #userflow {
     img {
         width: 700px;
