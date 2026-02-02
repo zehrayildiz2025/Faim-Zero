@@ -73,8 +73,9 @@ body {
 /*Tony*/
 #courbeVerte {
     /* padding-bottom:20px; */
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
+
 /* #btnTelechargerApp {
     margin-bottom:20px;
     padding-bottom:10px; 
@@ -144,6 +145,12 @@ section.CTA {
             margin-left: 30px;
             /* width:530px; */
         }
+    }
+
+    #stats {
+        font-size: 12px;
+        margin-top: 200px;
+        font-style: italic;
     }
 
     span {
@@ -532,12 +539,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     color: white;
-    
+
 
 }
 
 #h2Doc {
-    color: black;
+    color: white;
     font-size: 30px;
 }
 
@@ -565,8 +572,8 @@ nav {
 .imgEmptyCart {
     width: 100px;
     float: left;
-    padding-top:15px;
-    padding-right:15px;
+    padding-top: 15px;
+    padding-right: 15px;
 }
 
 /*Section pour qui*/
@@ -644,7 +651,7 @@ h2 {
 }
 
 /* maquette */
-.maquette {
+#userflow {
     img {
         width: 700px;
         text-align: center;
@@ -686,7 +693,7 @@ h2 {
 
     .flexOne {
         flex: 1;
-        padding-top:20px;
+        padding-top: 20px;
     }
 
     .pre-line {
