@@ -145,13 +145,15 @@ section.CTA {
             margin-left: 30px;
             /* width:530px; */
         }
+
+        #stats {
+            font-size: 12px;
+            margin-top: 200px;
+            font-style: italic;
+        }
     }
 
-    #stats {
-        font-size: 12px;
-        margin-top: 200px;
-        font-style: italic;
-    }
+
 
     span {
         font-size: var(--NumSpecial);
