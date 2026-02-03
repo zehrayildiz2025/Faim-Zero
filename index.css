@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--vert);
 }
 
-h1 {}
+
 
 h2 {
     line-height: 1.1;
@@ -112,10 +112,13 @@ section {
 /*Tony*/
 #courbeVerte {
     /* padding-bottom:20px; */
-    min-height: 60vh;
-    height: auto;
-    width: 100vw;
+    min-height: 50vh;
+    min-width: 100vw;
     bottom: 0;
+    position: absolute;
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -16vh);
 }
 
 /* #btnTelechargerApp {
@@ -129,8 +132,6 @@ section {
 
 .CTA {
     background-color: #cbdbdb;
-
-
     img.getOnApp {
         width: 10%;
     }
@@ -237,11 +238,11 @@ section {
     text-align: center;
     gap: 32px;
     margin-top: 64px;
+    padding: 5px;
 
 
     img {
         width: 100%;
-        height: 200px;
         object-fit: cover;
         background-size: cover;
         background-repeat: no-repeat;
@@ -251,7 +252,6 @@ section {
 
     .cardMini {
         width: 400px;
-        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.071);
         /* box-shadow: 5px, 5px, 5px, black; */
         border-radius: 12px;
         overflow: hidden;
@@ -284,20 +284,23 @@ header {
     overflow: hidden;
 
     h1 {
-        margin-top: 13vh;
+
         font-size: var(--H1);
+        height: 15vh;
+        display: flex;
+    
     }
 
-    #panierFruit {
+    .panierFruit {
         bottom: -4vh;
         right: -5vw;
+        /* z-index: -1; */
     }
 
 }
 
 header>img {
     position: absolute;
-    height: 74vh;
 }
 
 header>svg {
@@ -310,9 +313,9 @@ header>svg {
 #accueil {
     height: -webkit-fill-available;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    padding: 24px;
+    padding: 12vh;
 
     .container {
         z-index: 1;
@@ -320,8 +323,9 @@ header>svg {
         justify-content: center;
         display: flex;
         flex-direction: column;
-        width: 100%;
-        gap: 25vh;
+        width: 50vw;
+        gap: 15vh;
+        margin: 0;
     }
 
     .infos {
@@ -348,7 +352,7 @@ header>svg {
 
     border-style: groove;
     box-shadow: 4px 4px 0px 1px white;
-    transition: all 0.2s ease;
+    transition: ease;
 }
 
 
@@ -495,7 +499,7 @@ nav {
 
 .temoin {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     gap: 40px;
     margin-top: 80px;
@@ -549,7 +553,7 @@ nav {
 /* PARTIE DOC */
 .headerDoc {
     height: 500px;
-
+    background-image: url("assets/hero/Food-Suplements--Streamline-Milano.png");
 
     .navDoc {
         background-color: white;
@@ -616,15 +620,12 @@ nav {
 
 }
 
-#h2Doc {
-    color: white;
-    font-size: 30px;
-}
-
 /* section hero documentation */
 .containerHeroDeux {
     width: 500px;
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 200px;
+    margin-top: 160px;
     color: white;
 }
 
@@ -636,63 +637,84 @@ nav {
 
 .texteContexte {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 50vh;
+    width: 600px;
+    /* padding-top:50px; */
+    text-align: left;
+    /* height: 50vh; */
+    /* margin: auto; */
 }
 
+
 .imgEmptyCart {
-    width: 100px;
+    width: 200px;
     float: left;
     padding-top: 15px;
     padding-right: 15px;
 }
 
+.dameAvecPoussette {
+    width: 300px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
 /*Section pour qui*/
+
 .backgroundMintGreen {
     background-color: #E2F3F2;
 }
 
-/* Persona */
 #persona {
-    width: 700px;
-
     img {
-        border-radius: 25px;
-        width: 100%;
+        width: 50%;
     }
-
 }
 
 /* services */
-.service {
-    background-color: var(--turquoise);
+#service {
+    background-color: var(--turquoise)
+    /* .cardMini, img {
+        /* width: 30%; */
+    /* object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
 
-    /* img {
+.imgService {
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* img {
         width: 200px;
     } */
 
-    .serviceContainer {
-        display: flex;
-        justify-content: center;
-        justify-content: space-around;
-        padding: 75px;
-        text-align: center;
-        gap: 20px;
+.serviceContainer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 75px;
+    text-align: center;
+    gap: 20px;
 
-        .fondBlanc {
-            background-color: var(--blanc);
-        }
-    }
-
+    /* .fondBlanc {
+        background-color: var(--blanc);
+    } */
 }
-.serviceCard{
-        width: 300px;
-        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.071);
-        border-radius: 12px;
-        overflow: hidden;
-    }
+
+
+
+.serviceCard {
+    width: 300px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.071);
+    border-radius: 12px;
+    overflow: hidden;
+}
 
 
 .contenu-footer {
@@ -714,10 +736,10 @@ nav {
     }
 } */
 
-/*ecologie*/
-.ecologie {
+/*ecosysteme*/
+#ecosysteme {
     margin: auto;
-    width: 700px;
+    /* width: 700px; */
 
     img {
         width: 60%;
@@ -731,17 +753,29 @@ nav {
 }
 
 /* maquette */
+#maquette {
+    p {
+        color: #141414;
+    }
+}
+
 .fonction {
     display: flex;
     flex-direction: row;
 }
-.maquetteImg{
-    width: 75px;
+
+.maquetteImg {
+    width: 1080px;
 }
+
+.maquetteImgDeux {
+    width: 50%;
+}
+
 /* userflow */
 #userflow {
     img {
-        width: 700px;
+        width: 1000px;
         text-align: center;
     }
 }
@@ -809,4 +843,10 @@ nav {
     font-family: "Space Grotesk", sans-serif;
     /* background-color:blue; */
     /* color:blue; */
+}
+
+.contexte-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
