@@ -33,7 +33,7 @@
     .container{
         gap: 30vh;
         h1{
-            color: #364141;
+            color: #272a2a;
         }
     }
 }
@@ -362,12 +362,12 @@ header>svg {
         gap: 15vh;
         margin: 0; */
                 z-index: 1;
-        height: 60vh;
+        height: 50vh;
         justify-content: space-between;
         display: flex;
         flex-direction: column;
         width: 49vw;
-        gap: 33vh;
+        gap: 22vh;
         margin: 0;
     }
 
