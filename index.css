@@ -29,7 +29,14 @@
     --NumSpecial: 60px;
 
 }
-
+#accueil{
+    .container{
+        gap: 30vh;
+        h1{
+            color: #364141;
+        }
+    }
+}
 /* code global */
 body {
     font-family: "Space Grotesk", sans-serif;
@@ -109,22 +116,22 @@ section {
 /* Style global */
 
 
-/*Tony*/
 #courbeVerte {
     /* padding-bottom:20px; */
     min-height: 50vh;
     min-width: 100vw;
     bottom: 0;
     position: absolute;
+    /* top: 40vh;
+    left: 50vw; */
     top: 40vh;
-    left: 50vw;
+    left: 66vw;
     transform: translate(-50%, -16vh);
 }
 
-/* #btnTelechargerApp {
-    margin-bottom:20px;
-    padding-bottom:10px; 
-} */
+.textLeft {
+    text-align: left;
+}
 
 .boxShadow {
     box-shadow: 5px;
@@ -132,12 +139,27 @@ section {
 
 .CTA {
     background-color: #cbdbdb;
+
     img.getOnApp {
         width: 10%;
     }
 
     img.telephonesCTA {
         width: 30%;
+    }
+
+    .logoCTA {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+
+        img {
+            width: 90px;
+            border-radius: 5px;
+        }
+
     }
 
     .titreEtGetOnApp {
@@ -151,12 +173,15 @@ section {
     justify-content: center;
     gap: 64px;
     padding: 88px;
+    
 
     img {
         height: 80px;
 
     }
 }
+
+
 
 /* Problématique */
 #problematique {
@@ -171,7 +196,7 @@ section {
     }
 
     #stats {
-        font-size: 12px;
+        font-size: 10px;
         font-style: italic;
         margin-top: 100px;
     }
@@ -229,6 +254,11 @@ section {
 }
 
 /* solution */
+#solution {
+    h3 {
+        color: var(--vert);
+    }
+}
 
 .carteEtape {
     display: flex;
@@ -239,6 +269,10 @@ section {
     gap: 32px;
     margin-top: 64px;
     padding: 5px;
+
+    h3 {
+        color: var(--vert);
+    }
 
 
     img {
@@ -288,7 +322,7 @@ header {
         font-size: var(--H1);
         height: 15vh;
         display: flex;
-    
+        
     }
 
     .panierFruit {
@@ -318,13 +352,21 @@ header>svg {
     padding: 12vh;
 
     .container {
-        z-index: 1;
+        /* z-index: 1;
         height: 60vh;
         justify-content: center;
         display: flex;
         flex-direction: column;
         width: 50vw;
         gap: 15vh;
+        margin: 0; */
+                z-index: 1;
+        height: 60vh;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        width: 49vw;
+        gap: 33vh;
         margin: 0;
     }
 
@@ -536,7 +578,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: var(--noir);
+        color: var(--vert);
         font-size: 15px;
         font-family: "Space Grotesk", sans-serif;
         /* background-color: blue; */
@@ -564,7 +606,7 @@ nav {
 
         a {
             text-decoration: none;
-            color: var(--noir);
+            color: var(--vert);
             font-size: 15px;
             font-family: "Space Grotesk", "sans-serif";
         }
@@ -584,6 +626,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255);
+    color: var(--vert);
     position: absolute;
     width: 100%;
 }
@@ -615,7 +658,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: white;
+
 
 
 }
@@ -651,12 +694,14 @@ nav {
 .imgEmptyCart {
     width: 200px;
     float: left;
+    height: 200px;
     padding-top: 15px;
-    padding-right: 15px;
+    margin-top: 30px;
+    padding-right: 15px
 }
 
 .dameAvecPoussette {
-    width: 300px;
+    width: 260px;
     padding-top: 15px;
     padding-right: 15px;
 }
@@ -669,7 +714,7 @@ nav {
 
 #persona {
     img {
-        width: 50%;
+        width: 700px;
     }
 }
 
@@ -687,6 +732,8 @@ nav {
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: var(--vert);
+    width: 25%;
 }
 
 
@@ -701,10 +748,6 @@ nav {
     padding: 75px;
     text-align: center;
     gap: 20px;
-
-    /* .fondBlanc {
-        background-color: var(--blanc);
-    } */
 }
 
 
@@ -739,7 +782,11 @@ nav {
 /*ecosysteme*/
 #ecosysteme {
     margin: auto;
-    /* width: 700px; */
+
+    p {
+        text-align: left;
+    }
+
 
     img {
         width: 60%;
@@ -756,6 +803,10 @@ nav {
 #maquette {
     p {
         color: #141414;
+    }
+
+    h3 {
+        color: var(--vert);
     }
 }
 
