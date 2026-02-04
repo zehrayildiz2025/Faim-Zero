@@ -803,6 +803,7 @@ nav {
 #maquette {
     p {
         color: #141414;
+        padding-bottom: 40px;
     }
 
     h3 {
@@ -845,8 +846,6 @@ nav {
     justify-content: center;
     gap: 20px;
 }
-
-/* section ACT*/
 
 /* .telechargement {
     .button {
